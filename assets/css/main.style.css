@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ======================== LOGO FONT ======================== */
+
+@font-face {
+    font-family: logoFont;
+    src: url(../src/font/logoFont.ttf);
+}
+
+/* ======================== LOGO FONT ======================== */
+
+/* ======================== ROOT COLORS ======================== */
+
+:root {
+    --whiteColor: #fff;
+    --primaryColor: #D63384;
+    --backgroundColor: #212529;
+    --backgrountColorDark: #111418;
+    --textColor: #65686B;
+}
+
+/* ======================== ROOT COLORS ======================== */
+
+/* ======================== INITIAL STYLE ======================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--whiteColor);
+    overflow-x: hidden;
+    font-size: 14px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ======================== INITIAL STYLE ======================== */
+
+/* ======================== CREATEING CLASS ======================== */
+
+.container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.flexBoxCenter {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.flexBoxSpaceBetween {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+/* ======================== CREATEING CLASS ======================== */
+
+/* ======================== MAIN UI ======================== */
+
+/* ======================== NAVBAR STYLEING ======================== */
+
+section.navbar .navbar--body {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: all .4s ease-in-out;
+}
+
+section.navbar .navbar--body.fixed--top {
+    background-color: gray;
+    padding: 15px 0;
+}
+
+section.navbar .navbar--body .container nav .nav-logo a {
+    color: var(--whiteColor);
+    font-size: 28px;
+    font-family: logoFont;
+}
+
+section.navbar .navbar--body .container nav ul.nav-manu .nav-link {
+    margin: 0 15px;
+}
+
+section.navbar .navbar--body .container nav ul.nav-manu .nav-link a {
+    color: var(--whiteColor);
+    font-weight: 300;
+    transition: all .4s ease;
+}
+
+section.navbar .navbar--body .container nav ul.nav-manu .nav-link a:hover {
+    color: var(--primaryColor);
+}
+
+/* ======================== NAVBAR STYLEING ======================== */
+
+/* ======================== HERO STYLEING ======================== */
+
+section.hero .hero--body {
+    background-image: url(../src/img/background-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: 100vh;
+}
+
+section.hero .hero--body .container .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.hero .hero--body .container .content .title-text {
+    color: var(--whiteColor);
+    opacity: 0.9;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+}
+
+section.hero .hero--body .container .content .main-text {
+    color: var(--whiteColor);
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.hero .hero--body .container .content .sub-title-text {
+    color: var(--whiteColor);
+    opacity: 0.9;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    margin-bottom: 36px;
+}
+
+section.hero .hero--body .container .content .button {
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    padding: 15px 38px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all .4s ease;
+}
+
+section.hero .hero--body .container .content .button:hover {
+    background-color: #a72666;
+}
+
+/* ======================== HERO STYLEING ======================== */

@@ -60,6 +60,10 @@ button {
 
 /* ======================== CREATEING CLASS ======================== */
 
+.sectionPadding {
+    padding: 110px 0;
+}
+
 .container {
     width: 85%;
     height: 100%;
@@ -80,11 +84,54 @@ button {
     justify-content: space-between;
 }
 
+.Title {
+    font-size: 38px;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.titleAfter::after {
+    content: '';
+    display: block;
+    background-color: var(--primaryColor);
+    height: 1.5px;
+    width: 80px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.subTitle {
+    color: var(--textColor);
+    font-weight: 600;
+    text-align: center;
+    line-height: 27px;
+    width: 50%;
+    margin: 0 auto;
+}
+
 .button {
     padding: 15px 38px;
     border-radius: 50px;
     font-weight: 500;
     transition: all .4s ease;
+}
+
+.primaryCard {
+    background-color: var(--backgrountColorDark);
+    padding: 50px 32px;
+    flex-direction: column;
+    width: 30.7%;
+    border-radius: 5px;
+    border-bottom: 1px solid transparent;
+    transition: all .4s ease;
+}
+
+.primaryCard:hover {
+    border-bottom: 1px solid var(--primaryColor);
 }
 
 /* ======================== CREATEING CLASS ======================== */
@@ -188,7 +235,6 @@ section.hero .hero--body .container .content .button:hover {
 /* ======================== ABOUT ME STYLEING ======================== */
 
 section.about .about--body {
-    padding: 110px 0;
     background-color: var(--backgrountColorDark);
 }
 
@@ -291,3 +337,38 @@ section.about .about--body .container .content .button-group .botton-text:hover 
 }
 
 /* ======================== ABOUT ME STYLEING ======================== */
+
+/* ======================== OUR SERVICES STYLEING ======================== */
+
+section.service .service--body .container .card-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+section.service .service--body .container .card-group .card {
+    margin: 15px;
+}
+
+section.service .service--body .container .card-group .card i {
+    color: var(--primaryColor);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+section.service .service--body .container .card-group .card .title-text {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+section.service .service--body .container .card-group .card .text {
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--textColor);
+    text-align: center;
+}
+
+/* section.service .service--body .container .card-group .card .title-text / .text {} */
+
+/* ======================== OUR SERVICES STYLEING ======================== */

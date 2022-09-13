@@ -17,7 +17,7 @@
     --primaryColor: #D63384;
     --backgroundColor: #212529;
     --backgrountColorDark: #111418;
-    --textColor: #65686B;
+    --textColor: #6e777e;
 }
 
 /* ======================== ROOT COLORS ======================== */
@@ -39,12 +39,17 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     list-style-type: none;
 }
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 
 button {
@@ -73,6 +78,13 @@ button {
     align-items: center;
     align-content: center;
     justify-content: space-between;
+}
+
+.button {
+    padding: 15px 38px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all .4s ease;
 }
 
 /* ======================== CREATEING CLASS ======================== */
@@ -165,10 +177,6 @@ section.hero .hero--body .container .content .sub-title-text {
 section.hero .hero--body .container .content .button {
     color: var(--whiteColor);
     background-color: var(--primaryColor);
-    padding: 15px 38px;
-    border-radius: 50px;
-    font-weight: 500;
-    transition: all .4s ease;
 }
 
 section.hero .hero--body .container .content .button:hover {
@@ -176,3 +184,110 @@ section.hero .hero--body .container .content .button:hover {
 }
 
 /* ======================== HERO STYLEING ======================== */
+
+/* ======================== ABOUT ME STYLEING ======================== */
+
+section.about .about--body {
+    padding: 110px 0;
+    background-color: var(--backgrountColorDark);
+}
+
+section.about .about--body .container {
+    display: flex;
+}
+
+section.about .about--body .container .img {
+    flex: 1;
+    margin-right: 15px;
+}
+
+section.about .about--body .container .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+section.about .about--body .container .content {
+    flex: 1;
+    margin-left: 15px;
+}
+
+section.about .about--body .container .content .title-text {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.5;
+    margin-bottom: 20px;
+}
+
+section.about .about--body .container .content .name-text {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.3;
+    margin-bottom: 28px;
+}
+
+section.about .about--body .container .content .name-text span {
+    color: var(--primaryColor);
+}
+
+section.about .about--body .container .content .text {
+    color: var(--textColor);
+    line-height: 27px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+section.about .about--body .container .content .number-of-client {
+    margin: 40px 0;
+}
+
+section.about .about--body .container .content .number-of-client div {
+    margin: 0 35px;
+}
+
+section.about .about--body .container .content .number-of-client .side-bar {
+    width: 1px;
+    height: 55px;
+    background-color: var(--textColor);
+}
+
+section.about .about--body .container .content .number-of-client div h2.number-text {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section.about .about--body .container .content .number-of-client div p.label-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+section.about .about--body .container .content .button-group {
+    margin: 15px 0;
+    display: inline-block;
+}
+
+section.about .about--body .container .content .button-group .button {
+    color: var(--whiteColor);
+    background-color: var(--backgroundColor);
+    margin: 0 15px 0 10px;
+}
+
+section.about .about--body .container .content .button-group .button:hover {
+    background-color: #1c1e22;
+}
+
+section.about .about--body .container .content .button-group .botton-text {
+    color: var(--primaryColor);
+    font-size: 16px;
+    margin: 0 0 0 15px;
+}
+
+section.about .about--body .container .content .button-group .botton-text:hover {
+    text-decoration: underline;
+}
+
+/* ======================== ABOUT ME STYLEING ======================== */

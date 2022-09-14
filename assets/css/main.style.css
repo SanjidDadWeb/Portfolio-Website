@@ -369,6 +369,129 @@ section.service .service--body .container .card-group .card .text {
     text-align: center;
 }
 
-/* section.service .service--body .container .card-group .card .title-text / .text {} */
-
 /* ======================== OUR SERVICES STYLEING ======================== */
+
+/* ======================== WHY DIFFERENT STYLEING ======================== */
+
+section.different .different--body {
+    background-color: var(--backgrountColorDark);
+}
+
+section.different .different--body .container .card-group {
+    flex-wrap: wrap;
+    margin: 45px 0;
+}
+
+section.different .different--body .container .card-group .card {
+    display: flex;
+    width: 47.3%;
+    margin: 0 15px 35px 15px;
+}
+
+section.different .different--body .container .card-group .card .icon-div {
+    margin-right: 30px;
+}
+
+section.different .different--body .container .card-group .card .icon-div i {
+    color: var(--primaryColor);
+    font-size: 30px;
+    padding: 20px;
+    border: 1px solid var(--textColor);
+    border-radius: 50%;
+}
+
+section.different .different--body .container .card-group .card .content .title-text {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+section.different .different--body .container .card-group .card .content .sub-title-text {
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--textColor);
+    text-align: justify;
+}
+
+section.different .different--body .container .skill-div {
+    align-items: flex-start;
+}
+
+section.different .different--body .container .skill-div .image-div {
+    margin-right: 25px;
+    flex: 1;
+}
+
+section.different .different--body .container .skill-div .image-div img {
+    width: 100%;
+    height: 100%;
+}
+
+section.different .different--body .container .skill-div .content {
+    margin-left: 25px;
+    flex: 1;
+}
+
+section.different .different--body .container .skill-div .content .title-text {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+section.different .different--body .container .skill-div .content .sub-title-text {
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--textColor);
+}
+
+section.different .different--body .container .skill-div .content .skill-group {
+    margin: 15px 0;
+}
+
+section.different .different--body .container .skill-div .content .skill-group .content {
+    margin: 0;
+}
+
+section.different .different--body .container .skill-div .content .skill-group .content .title-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+section.different .different--body .container .skill-div .content .skill-group .content .percent {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+section.different .different--body .container .skill-div .content .skill-group .scroll-bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--textColor);
+    border-radius: 25px;
+}
+
+section.different .different--body .container .skill-div .content .skill-group .scroll-bar::after {
+    content: '';
+    display: block;
+    background-color: var(--primaryColor);
+    width: 90%;
+    height: 10px;
+    border-radius: 25px;
+}
+
+section.different .different--body .container .skill-div .content .skill-group .p-1::after {
+    width: 90%;
+}
+
+section.different .different--body .container .skill-div .content .skill-group .p-2::after {
+    width: 85%;
+}
+
+section.different .different--body .container .skill-div .content .skill-group .p-3::after {
+    width: 80%;
+}
+
+section.different .different--body .container .skill-div .content .skill-group .p-4::after {
+    width: 75%;
+}
+
+/* ======================== WHY DIFFERENT STYLEING ======================== */

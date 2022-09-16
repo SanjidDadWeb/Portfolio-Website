@@ -113,7 +113,7 @@ button {
     margin: 0 auto;
 }
 
-.button {
+.primaryButton {
     padding: 15px 38px;
     border-radius: 50px;
     font-weight: 500;
@@ -495,3 +495,35 @@ section.different .different--body .container .skill-div .content .skill-group .
 }
 
 /* ======================== WHY DIFFERENT STYLEING ======================== */
+
+/* ======================== AVAILABLE FOR FREELANCER STYLEING ======================== */
+
+section.freenalcer .freelancer--body {
+    background-color: var(--primaryColor);
+}
+
+section.freenalcer .freelancer--body .container {
+    flex-direction: column;
+}
+
+section.freenalcer .freelancer--body .container .title-text {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 24px;
+}
+
+section.freenalcer .freelancer--body .container .main-text {
+    font-size: 43px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 24px;
+}
+
+section.freenalcer .freelancer--body .container .button {
+    background-color: var(--whiteColor);
+    color: var(--primaryColor);
+    font-weight: 500;
+}
+
+/* ======================== AVAILABLE FOR FREELANCER STYLEING ======================== */
